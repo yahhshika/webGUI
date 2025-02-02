@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME PAGE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="leftside">
+            <div class="icon">
+                <img src="https://i.pinimg.com/736x/ed/46/2f/ed462f25c2b98ab2d254fab4974defef.jpg" alt="not found"
+                    class="lefticons notepad pointer">
+                <div class="name">Text Editor</div>
+            </div>
+            <div class="icon">
+                <img src="https://i.pinimg.com/736x/2a/ed/a4/2aeda4bb605213c2872170293c12a3d8.jpg" alt="not found"
+                    class="lefticons pointer">
+                <div class="name">Calculator</div>
+            </div>
+            <div class="icon">
+                <img src="https://i.pinimg.com/736x/e8/9e/39/e89e399108bf7e3ee4483355c1a62c39.jpg" alt="not found"
+                    class="lefticons pointer">
+                <div class="name">File explorer</div>
+            </div>
+
+
+
+        </div>
+
+    </div>
+    <div class="outer">
+
+
+        <footer class="tray">
+            <div class="weather">
+                <img src="https://i.pinimg.com/736x/06/c4/f7/06c4f70ec5931e2342e703e8a3f0a253.jpg" alt="img not found"
+                    class="bottomicons weatherimg">
+                17&deg;
+            </div>
+
+            <div class="menu">
+                <img src="https://i.pinimg.com/736x/17/82/a7/1782a76e7092acc13cf63120f9d46d0d.jpg" alt="not found"
+                    class="bottomicons window pointer">
+
+                <div class="searchbox">
+                    <img src="https://i.pinimg.com/736x/fa/0e/7b/fa0e7b992eff03c576727e95c746005c.jpg" alt="notfound"
+                        class="searchicon pointer">
+                    <form action="">
+                        <input type="search" class="search" placeholder="Search" name="search">
+                    </form>
+                </div>
+
+
+
+            </div>
+
+            <div class="status">
+                <img src="https://i.pinimg.com/736x/2f/ba/62/2fba622c390b64c651316b24396aa044.jpg" alt="not found"
+                    class="bottomicons vol">
+                <div class="timeanddate">
+                    <div class="time">
+                        22:18
+
+                    </div>
+                    <div class="date">
+                        01-02-2025
+                    </div>
+
+                </div>
+
+            </div>
+        </footer>
+    </div>
+    <div class="texteditor">
+        <div class="notepadOuter">
+            <div class="screenOperators">
+
+                <img src="https://i.pinimg.com/736x/dc/6c/3e/dc6c3eaf079fe49bf622b4982604d64f.jpg" alt="not found"
+                    class="screeners minimize basicicon-Border invert pointer">
+                <img src="https://i.pinimg.com/736x/13/4d/15/134d15d91e958408c004292dcc278d0d.jpg" alt="not found"
+                    class="screeners resize basicicon-Border invert pointer">
+                <img src="https://i.pinimg.com/736x/66/55/7c/66557cc0afee68bfccc2d2db8558dbed.jpg" alt="not found"
+                    class="screeners close basicicon-Border invert pointer">
+            </div>
+            <div class="options">
+                <div class="rightoptions">
+                    <span class="opt file pointer">File
+                        <div class="fileoptions">
+                            <div class="opt1">
+
+                                <form action=""><button class="rename opt2 pointer">Rename</button></form>
+                                <span class="shortcut">Ctrl+R</span>
+
+
+                            </div>
+                            <div class="opt1">
+                                <form action=""><button class="new opt2 pointer">New</button></form>
+                                <span class="shortcut">Ctrl+N</span>
+
+                            </div>
+
+                        </div>
+                    </span>
+                    <span class="opt edit pointer">Edit
+                        <div class="editoptions">
+                            <div class="opt1">
+                                <form action=""><button class="editname opt2 pointer">Edit Name</button></form>
+                                <span class="shortcut">Ctrl+E</span>
+
+                            </div>
+
+                        </div>
+                    </span>
+                    <span class="opt more pointer">More
+                        <div class="moreoptions">
+                            <div class="opt1">
+                                <form action=""><button class="showall opt2 pointer">All Files</button></form>
+                                <span class="shortcut">Ctrl+F</span>
+
+                            </div>
+
+                        </div>
+
+                    </span>
+                </div>
+                <!-- <div class="modes">
+                    <img src="https://i.pinimg.com/736x/9e/89/21/9e89218048b5ebc85e3f164461ee24c1.jpg" alt="" class="basicicon">
+                    <span class="mode">Light</span>
+                </div> -->
+
+
+            </div>
+            <!-- <p class="filename">File Name:  %> -->
+            </p>
+            <form method="POST" action="/files">
+                Enter Filename: <textarea name="filename" id="" class="filename"></textarea>
+                <textarea name="fileDesc" class="text"></textarea>
+
+                <button class="save">Save</button>
+
+               
+
+            </form>
+            <p class="createdAt"> createdAt: <%= files[0].createdAt.toString().split(" ") %></p>
+            
+            
+            
+        </div>
+        
+    </div>
+    <!-- dialog box for text editor -->
+    <div class="firstDialog">
+        <div class="screenOperators firstDialogOperator">
+            <img src="https://i.pinimg.com/736x/66/55/7c/66557cc0afee68bfccc2d2db8558dbed.jpg" alt="" class="screeners basicicon-Border invert pointer">
+        </div>
+        <div>
+            <div class="opt3 opt3a lato-bold">Create New File</div>
+        <div class="opt3 opt3b lato-bold" >Open Existing File</div>
+        </div>
+        
+    </div>
+    <div class="secondDialog">
+        
+        <div>
+    
+            <table>
+                <thead>
+
+                    <tr>
+                        <th>FILE NAME</th>
+                        <th>CREATED AT</th>                                    
+                    </tr>
+                                
+                </thead>
+                <tbody>
+
+                    
+                    <%for(file of files) { %>
+                        <tr>
+                            <td class="lato-bold"><%= file.filename %></td>
+                            <td class="lato-bold"><%= file.createdAt %></td>
+                        </tr>
+                            
+
+                    <% } %>
+
+                </tbody>
+            </table>
+        </div>
+
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
